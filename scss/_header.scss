@@ -1,0 +1,30 @@
+.header-inner, nav {
+    border-bottom: rgba(0, 0, 0, .1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .05);
+    background: linear-gradient(to right, #1d87b9 0%, #61d0e0 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.nav-header {
+    li {
+        &.active {
+            color: #225baf;
+        }
+        a.nav-link {
+            display: block;
+            color: #fff !important;
+            padding: 30px 8px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            &:hover {
+                color: #225baf;
+            }
+        }
+    }
+
+}

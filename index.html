@@ -1,20 +1,308 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <title>Bootstrap 4 Page</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./css/main.min.css">
+    </head>
+    <body>
+        <div class="loading">
+            <div class="loading-content">
+                <div class="inner-item"></div>
+                <div class="inner-item"></div>
+                <div class="inner-item"></div>
+                <div class="inner-item"></div>
+                <div class="inner-item"></div>
+            </div>
+        </div>
+
+        <!-- header -->
+        <div class="jumbotron text-center custom-jumbotron" style="margin-bottom:0">
+            <h1>My First Bootstrap 4 Page</h1>
+            <p>Resize this responsive page to see the effect!</p> 
+        </div>
+
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav nav-header mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="content my-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <!-- images -->
+                        <div class="card text-white card-profile">
+                          <img class="card-img-top" src="./images/avatar.png" alt="">
+                          <div class="card-body">
+                            <h4 class="card-title">My Profile</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, placeat!</p>
+                          </div>
+                        </div>
+                        <!-- link -->
+                        <div class="p-3 link-sidebar mt-4">
+                            <div class="title">
+                                <span>Some Links</span>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="">
+                                    <a href="" class="a-link">Link 1</a>
+                                </li>
+                                <li class="">
+                                    <a href="" class="a-link">Link 2</a>
+                                </li>
+                                <li class="">
+                                    <a href="" class="a-link">Link 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="blog">
+                            <div class="main-title">
+                                <h3>Blog Posts</h3>
+                                <h4>Our Most Popular Blog</h4>
+                            </div>
+
+                            <!-- post items -->
+                            <div class="post mb-4">
+                                <!-- Post Image -->
+                                <div class="post-img">
+                                    <img src="images/bg-header.jpg" class="img-fluid" alt="">
+                                </div>
+                                <!-- Post Content -->
+                                <div class="post-content position-relative p-3">
+                                    <div class="post-title">
+                                        <a href=""><h4>Consulting Reporting Qounc Arei Could More...</h4></a>
+                                    </div>
+                                    <div class="post-text px-3">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...</p>
+                                    </div>
+                                    <a href="blog-single.html" class="post-more m-3">
+                                        Read more<i class="fa fa-angle-double-right"></i>
+                                    </a>
+
+                                    <div class="post-date"><span>28</span>Feb</div>
+                                </div>
+                            </div>
+
+                            <!-- post items -->
+                            <div class="post mb-4">
+                                <!-- Post Image -->
+                                <div class="post-img">
+                                    <img src="images/bg-header.jpg" class="img-fluid" alt="">
+                                </div>
+                                <!-- Post Content -->
+                                <div class="post-content position-relative p-3">
+                                    <div class="post-title">
+                                        <a href=""><h4>Consulting Reporting Qounc Arei Could More...</h4></a>
+                                    </div>
+                                    <div class="post-text px-3">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...</p>
+                                    </div>
+                                    <a href="blog-single.html" class="post-more m-3">
+                                        Read more<i class="fa fa-angle-double-right"></i>
+                                    </a>
+
+                                    <div class="post-date"><span>28</span>Feb</div>
+                                </div>
+                            </div>
+
+                            <!-- post items -->
+                            <div class="post mb-4">
+                                <!-- Post Image -->
+                                <div class="post-img">
+                                    <img src="images/bg-header.jpg" class="img-fluid" alt="">
+                                </div>
+                                <!-- Post Content -->
+                                <div class="post-content position-relative p-3">
+                                    <div class="post-title">
+                                        <a href=""><h4>Consulting Reporting Qounc Arei Could More...</h4></a>
+                                    </div>
+                                    <div class="post-text px-3">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...</p>
+                                    </div>
+                                    <a href="blog-single.html" class="post-more m-3">
+                                        Read more<i class="fa fa-angle-double-right"></i>
+                                    </a>
+
+                                    <div class="post-date"><span>28</span>Feb</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="newsletter">
+			<div class="container">
+				<div class="newsletter-inner">
+					<div class="row">
+						<div class="col-lg-5">
+							<h2>Subscribe to our newsletter</h2>
+						</div>
+						<div class="col-lg-7">
+							<form class="newsletter-form" action="#" method="post">
+								<div class="form-group">
+									<input type="email" class="form-control" name="email" placeholder="Enter your email" required="">
+									<button class="main-btn" type="submit" name="send"><span>Subscribe</span></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        <!-- footer -->
+		<footer>
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3 col-12">
+							<img src="./images/logo.png" alt="lodang-logo" class="img-fluid w-50 mx-auto">
+							<p>
+	 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus optio saepe iste voluptatum eveniet incidunt ut, laborum soluta. Corporis fuga dolorum vitae aliquid ducimus, quia cum doloribus necessitatibus. Deserunt, accusamus.
+							</p>
+						</div>
+						<div class="col-sm-2 col-12">
+							<div class="footer-item">
+								<div class="footer-title">
+									<h3 class="">Tentang</h3>
+								</div>
+								<ul class="list-unstyled footer-list">
+									<li>
+										<a href="">Tentang Kami</a>
+									</li>
+									<li>
+										<a href="">Bantuan</a>
+									</li>
+									<li>
+										<a href="">Kontak Kami</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-2 col-12">
+							<div class="footer-item">
+								<div class="footer-title">
+									<h3 class="">Ikuti Kami</h3>
+								</div>
+								<ul class="list-unstyled footer-list">
+									<li>
+										<a href="">Instagram</a>
+									</li>
+									<li>
+										<a href="">Facebook</a>
+									</li>
+									<li>
+										<a href="">Linkedin</a>
+									</li>
+									<li>
+										<a href="">Twitter</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-2 col-12">
+							<div class="footer-item">
+								<div class="footer-title">
+									<h3 class="">Lainnya</h3>
+								</div>
+								<ul class="list-unstyled footer-list">
+									<li>
+										<a href="">Pusat Bantuan</a>
+									</li>
+									<li>
+										<a href="">Syarat dan ketentuan</a>
+									</li>
+									<li>
+										<a href="">Kebijakan Privasi</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-3 col-12">
+							<div class="footer-item">
+								<div class="footer-title">
+									<h3 class="">Post Tags</h3>
+								</div>
+								<ul class="list-unstyled ul-post-tags footer-list">
+									<li>
+										<a href="" class="btn btn-outline-light btn-tags">App</a>
+									</li>
+									<li>
+										<a href="" class="btn btn-outline-light btn-tags">Business</a>
+									</li>
+									<li>
+										<a href="" class="btn btn-outline-light btn-tags">Corporation</a>
+									</li>
+									<li>
+										<a href="" class="btn btn-outline-light btn-tags">Creative</a>
+									</li>
+									<li>
+										<a href="" class="btn btn-outline-light btn-tags">Fasion</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+	 			</div>
+			</div>
+			<div class="footer-btm">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<span>
+								&copy; 2020 bs4. All right reserved
+							</span>
+						</div>
+						<div class="col d-flex">
+							<div class="ml-auto">
+								<i class="fas fa-envelope mr-2"></i>bootrap@bootstrap.com
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="./vendor/jquery/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="./js/main.min.js"></script>
+    </body>
+    </html>
